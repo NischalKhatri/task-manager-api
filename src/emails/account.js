@@ -9,7 +9,6 @@ const sendWelcomeEmail =  (email, name) => {
         subject: 'Thanks for joining in!',
         text: `Welcome to the app, ${name}. Let me know how you get along with the app.`
     }, (error, body) => {
-        console.log(body)
     })
 }
 
@@ -20,7 +19,6 @@ const sendCancellationEmail = (email, name) => {
         subject: 'Sorry to see you go.',
         text: `We are sorry to see you leave, ${name}. Please let us know if there is anything we can do to help you stay with us longer.`
     }, (error, body) => {
-        console.log(body)
     })
 }
 
